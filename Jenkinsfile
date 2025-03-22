@@ -17,14 +17,12 @@ pipeline{
                 success{
                     mail to: "gurnoor4778.be23@chitkara.edu.in", //changed from mail to, due to needing to attack log
                     subject: "Unit test stage successful",
-                    body: "The Unit and integration test stage was successful",
-                    attachLog: true
+                    body: "The Unit and integration test stage was successful"
                 }
                 failure{
                     mail to: "gurnoor4778.be23@chitkara.edu.in",
                     subject: "Unit test stage failure",
-                    body: "The Unit and integration test failed due to an error",
-                    attachLog: true                    
+                    body: "The Unit and integration test failed due to an error"             
                 }
             }
         }
@@ -42,14 +40,12 @@ pipeline{
                 success{
                     mail to: "gurnoor4778.be23@chitkara.edu.in",
                     subject: "Security scan stage successful",
-                    body: "The security scan stage was successful",
-                    attachLog: true
+                    body: "The security scan stage was successful"
                 }
                 failure{
                     mail to: "gurnoor4778.be23@chitkara.edu.in",
                     subject: "Security scan stage failure",
-                    body: "The security scan stage failed due to an error",                    
-                    attachLog: true
+                    body: "The security scan stage failed due to an error"
                 }
             }
         }
@@ -66,14 +62,12 @@ pipeline{
                 success{
                     mail to: "gurnoor4778.be23@chitkara.edu.in",
                     subject: "Integration test on staging was successful",
-                    body: "The integration test on staging was successful",
-                    attachLog: true                  
+                    body: "The integration test on staging was successful"            
                 }
                 failure{
                     mail to: "gurnoor4778.be23@chitkara.edu.in",
                     subject: "Integration test on staging failure",
-                    body: "The integration test on staging was a failure due to an error",
-                    attachLog: true                                        
+                    body: "The integration test on staging was a failure due to an error"                                      
                 }
             }
         }
